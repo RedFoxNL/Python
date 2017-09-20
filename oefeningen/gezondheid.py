@@ -48,9 +48,16 @@ class man (mensen):
 
 persoon = mensen (185, 80, 27)
 persoon1 = mensen (160, 60, 27)
+persoon2 = mensen (134, 56, 51)
+persoon3 = mensen (168, 89, 31)
 persoon.print_Persoon()
 persoon1.print_Persoon()
+persoon2.print_Persoon()
+persoon3.print_Persoon()
 print("\n")
 
 man.jongen(persoon, 'man')
 vrouw.meisje(persoon1, 'vrouw')
+man.jongen(persoon2, 'man')
+vrouw.meisje(persoon3, 'vrouw')
+man.jongen(persoon3, 'vrouw')
