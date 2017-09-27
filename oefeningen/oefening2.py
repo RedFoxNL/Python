@@ -1,7 +1,7 @@
 import sys
 
 def main():
-    counter = 1    counter = 1
+    counter = 1
     for x in range(1,11):
         GemiddeldePerDag(counter)
         counter += 1
