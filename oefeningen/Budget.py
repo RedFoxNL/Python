@@ -1,6 +1,5 @@
-#Library voor input importeren
-import sys
-
+# Deze code omvat een programma die berekent wordt het maandelijks te besteden budget zal zijn
+# De waarden / values in de code, zijn fictief
 # Functie om de lijsten te printen. Gebasseerd op de meegegeven variabele, waarin aangegeven wordt welke lijst gelezen moet worden
 def print_Lijst(arg):
     for items in arg:
