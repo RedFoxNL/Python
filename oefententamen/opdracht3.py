@@ -1,12 +1,12 @@
 class Employee:
-
+    pass
 
 
 
 
 
 class Management(Employee):
-
+    pass
 
 
 
