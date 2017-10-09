@@ -6,7 +6,7 @@ class Employee:
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
-        self.mail = first + '.' + last + '@company.com'
+        self.email = first + '.' + last + '@company.com'
         self.pay = pay
 
     def fullname(self):
@@ -52,5 +52,15 @@ mng_1 = Manager('Ted','Baker',100000, [emp_1] )
 print(emp_1.fullname())
 print(dev_1.fullname())
 print(mng_1.fullname())
+print('\n')
+
+print(emp_1.email)
+print(dev_1.email)
+print(mng_1.email)
+print('\n')
+
+mng_1.print_emp()
 mng_1.add_emp(dev_1)
+mng_1.print_emp()
+mng_1.remove_emp(emp_1)
 mng_1.print_emp()
