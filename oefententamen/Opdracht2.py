@@ -1,30 +1,21 @@
-packets_str = ''
-with open('packet_example.txt', 'r') as f:
-    packets_str = f.read()
-
-packet_length=0
-mac_address =''
-packet_content=''
-packetstart = 0
-packetend = -1
-
+i = 0
 packet_list=[]
+count = 0
+# read file that contains network packets
+with open('packet_example.txt', 'r') as f:
+    string = ''.join(str(x) for x in f)
 
-# for pointer in range(0,len(packets_str)):
-#     if pointer
+while i < len(string)-15:
+    MacAdress = ''.join(string[i: i + 12])
+    begin = i +12
+    size = ''.join(string[begin: begin + 2])
+    intSize = int(size,16)
+    message = ''.join(string[begin + 2: begin + intSize + 2])
+    i += 12 + 2 + intSize
 
-mac_address = packets_str[0:13]
-packet_length = packets_str[13:16]
-packet_content = packets_str[17:62]
-print("Het mac adres is", mac_address)
-print("Packet lengte is",packet_length)
-print("Dit is de boodschap", packet_content)
+    packet_list.append([MacAdress, intSize ,message])
 
-#Nu moet het zo gemaakt worden dat hij de waarden van packet_str zelf uitleest en invoerd etc,
-#Totdat de packetleeg is en in packet_list gooit
-#daarna kunnen de waarden opnieuw gebruikt worden
+    pass
 
 for packet in packet_list:
     print(packet)
-
-
