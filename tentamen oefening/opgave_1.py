@@ -5,7 +5,6 @@ brown='bakerstreet oxford picadilly charingcross'
 lines_london = [blue, yellow, red, brown]
 
 # (a)
-set_of_stations = set()
 blue= (blue.split(" "))
 yellow= (yellow.split(" "))
 red= (red.split(" "))
@@ -13,7 +12,7 @@ brown= (brown.split(" "))
 
 set_of_stations = blue, yellow, red, brown
 
-print(set_of_stations)
+#print(set_of_stations)
 
 # (b)
 dict_of_stations = {}

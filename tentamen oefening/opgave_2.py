@@ -13,10 +13,8 @@ with open('airports.json', 'r') as infile:
 
 #B
 list_of_delays = ()
-for airports in list_of_airports:
-    for airports['minutes delayed'] in airports['statistics']:
-        print(airports['minutes delayed'])
-        list_of_delays += airports.flight , airports.delayed
+#for airports in list_of_airports:
+    #print(list_of_airports)
 
 # sort airports by min_delayed_weather
 
