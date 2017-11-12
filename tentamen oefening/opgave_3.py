@@ -63,3 +63,15 @@ p2 = Passenger('Mary', 1, (5,5), (6,0))
 p3 = Passenger('Ann', 4, (2,2), (7,0))
 p4 = Passenger('Paul', 4, (11,3), (7,0))
 p5 = Passenger('Sue', 4, (3,8), (7,0))
+
+# D)
+for p in (p1, p2, p3, p4, p5):
+    if tc.request_pickup(p):
+        print(p.name, 'is picked-up by a taxi')
+    else:
+        print('No taxi available for passenger', p.name)
+
+# E)
+print()
+for v, p in tc.assignments.items():
+    print(p, "will be served by", v)
