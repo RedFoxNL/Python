@@ -27,3 +27,6 @@ def main():
 
 main()
 
+
+assert cm_to_inch(254)==100 , 'Error : Faulty calculation'
+assert calc_cost_pipe(100,cm_to_inch(25)), 'Error: D<25cm!!'
