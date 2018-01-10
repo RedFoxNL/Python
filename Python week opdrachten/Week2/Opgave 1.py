@@ -14,8 +14,11 @@ print(tup1_2)
 
 # d) Van tuple naar string.
 tup2 = ('a', 'b', 'c')
+tupzoveel = ('j','e','m','o','e','d','e','r')
+string2 = ''.join(tupzoveel)
 string = ''.join(tup2)
 print(string)
+print(string2)
 
 # e) Van list naar tuple.
 L = [5, 10, 7]
